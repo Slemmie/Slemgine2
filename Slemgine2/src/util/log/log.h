@@ -13,6 +13,10 @@ namespace slg {
 		// format information for entire message
 		struct Format {
 			
+			// override any locally specified formatting for any arguments
+			// (does not override formatting specific to local arguments)
+			bool override_arg_formats;
+			
 			// codes (0 if not provided)
 			uint8_t fg_r, fg_g, fg_b;
 			uint8_t bg_r, bg_g, bg_b;
